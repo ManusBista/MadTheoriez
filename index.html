@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<title>TEST</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+		<div class="container-fluid">
+			<a href="#" class="navbar-brand">MAD THEORIEz</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navmenu">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item">
+						<a href="#learn" class="nav-link">What You'll Learn</a>
+					</li>
+					<li class="nav-item">
+						<a href="#questions" class="nav-link">Questions</a>
+					</li>
+					<li class="nav-item">
+						<a href="#theroist" class="nav-link">Theroist</a>
+					</li>
+				</ul>
+			</div>
+			<form class="d-flex">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-light" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+
+	<section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+		<div class="container">
+			<div class="d-sm-flex align-items-center justify-content-between">
+				<div>
+					<h1>Become a <span class="text-warning"> Theorist </span></h1>
+					<p class="lead my-4">
+						We focus on providing the fundamentals of the latest
+						and greatest theories to prepare you to theorize your own theories and share it to the verse
+					</p>
+					<button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+						Start The Enrollment
+					</button>
+				</div>
+				<img class="img-fluid w-50 d-none d-sm-block" src="idea.svg" alt="" />
+			</div>
+		</div>
+	</section>
+
+	<!-- in process -->
+	<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="enrollLabel">Enrollement</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="lead">Fill out this form and we'll get back to you </p>
+					<form id="signup" class="form">
+						<h1>Sign Up</h1>
+						<div class="form-field">
+							<label for="username">Username:</label>
+							<input type="text" name="username" id="username" autocomplete="off">
+							<small></small>
+						</div>
+
+						<div class="form-field">
+							<label for="email">Email:</label>
+							<input type="text" name="email" id="email" autocomplete="off">
+							<small></small>
+						</div>
+
+						<div class="form-field">
+							<label for="password">Password:</label>
+							<input type="password" name="password" id="password" autocomplete="off">
+							<small></small>
+						</div>
+
+
+						<div class="form-field">
+							<label for="confirm-password">Confirm Password:</label>
+							<input type="password" name="confirm-password" id="confirm-password" autocomplete="off">
+							<small></small>
+						</div>
+
+						<div class="form-field">
+							<input type="submit" value="Sign Up">
+						</div>
+					</form>
+				</div>
+				<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+crossorigin="anonymous"></script>
+</body>
+</html>
