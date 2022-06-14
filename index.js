@@ -134,15 +134,12 @@ form.addEventListener('submit', function (e) {
 
     // submit to the server if the form is valid
     if (isFormValid) {
-        console.log("success");
-        // localStorage.setItem("username",usernameEl.value)
-        // localStorage.getItem("username")
-        // localStorage.setItem("email",)
-        // localStorage.getItem("email")
-        // localStorage.setItem("password",)
-        // localStorage.getItem("password")
-        // localStorage.setItem("conform-password",)
-        // localStorage.getItem("conform-password")
+        localStorage.setItem("username",usernameEl.value)
+        localStorage.getItem("username")
+        localStorage.setItem("email",emailEl.value)
+        localStorage.getItem("email")
+        // console.log("success");
+
     }else{
         console.log("Ashish is gay");
     }
