@@ -1,3 +1,18 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyCqaBrgkBoCwz6YnXgYQGnmiV_tyOJoFxU",
+    authDomain: "madtheoriez.firebaseapp.com",
+    databaseURL: "https://madtheoriez-default-rtdb.firebaseio.com",
+    projectId: "madtheoriez",
+    storageBucket: "madtheoriez.appspot.com",
+    messagingSenderId: "52210247546",
+    appId: "1:52210247546:web:7189029c6a40b8ee0318c3",
+    measurementId: "G-ZNRXQFKZPL"
+  };
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+console.log(firebase)
+
 const usernameEl = document.querySelector('#username');
 const emailEl = document.querySelector('#email');
 const passwordEl = document.querySelector('#password');
@@ -61,7 +76,6 @@ const checkPassword = () => {
 
 const checkConfirmPassword = () => {
     let valid = false;
-    // check confirm password
     const confirmPassword = confirmPasswordEl.value.trim();
     const password = passwordEl.value.trim();
 
@@ -123,7 +137,7 @@ form.addEventListener('submit', function (e) {
 
     // validate fields
     let isUsernameValid = checkUsername(),
-        isEmailValid = checkEmail(),
+        isEmailValid = checkEmail(), 
         isPasswordValid = checkPassword(),
         isConfirmPasswordValid = checkConfirmPassword();
 
@@ -134,10 +148,10 @@ form.addEventListener('submit', function (e) {
 
     // submit to the server if the form is valid
     if (isFormValid) {
-        localStorage.setItem("username",usernameEl.value)
-        localStorage.getItem("username")
-        localStorage.setItem("email",emailEl.value)
-        localStorage.getItem("email")
+        firebase.database().ref("/").child(usernameEl.value).update({
+            email : emailEl.value,
+            password : passwordEl.value,
+        });
         // console.log("success");
 
     }else{
