@@ -152,10 +152,13 @@ form.addEventListener('submit', function (e) {
             email : emailEl.value,
             password : passwordEl.value,
         });
+        alert("Sign-up Successful","success");
         // console.log("success");
 
-    }else{
-        console.log("Ashish is gay");
+    }
+    else{
+        alert("Sign-up Failed","fail");
+        // console.log("Failed");
     }
 
 });
@@ -191,3 +194,4 @@ form.addEventListener('input', debounce(function (e) {
             break;
     }
 }));
+
