@@ -336,6 +336,7 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap:1.5rem;
+    background-color: black;
 }
 
 .icons-container .icons{
@@ -347,20 +348,23 @@ section{
 
 .icons-container .icons i{
     font-size: 3.5rem;
-    color:var(--bl);
+    color:whitesmoke;
 }
 
 .icons-container .icons h3{
     font-size: 2.2rem;
-    color:var(--black);
+    color:whitesmoke;
     padding-bottom: .5rem;
 }
 
 .icons-container .icons p{
     font-size: 1.4rem;
-    color:var(--light-color);
+    color: darkgoldenrod;
 }
 
+/* .featured{
+background-color: black;
+} */
 .featured .featured-slider .box{
     margin:2rem 0;
     position: relative;
@@ -375,7 +379,7 @@ section{
 
 .featured .featured-slider .box .image{
     padding:1rem;
-    background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
+    background: linear-gradient(15deg, rgb(17, 17, 17) 30%, #fff 30.1%);
 }
 
 .featured .featured-slider .box:hover .image{
@@ -452,6 +456,7 @@ section{
     color:#fff;
 }
 
+
 .arrivals .arrivals-slider .box{
     display: flex;
     align-items:center;
@@ -459,6 +464,7 @@ section{
     padding:2rem 1rem;
     border:var(--border);
     margin:1rem 0;
+    background-color: black;
 }
 
 .arrivals .arrivals-slider .box:hover{
@@ -471,18 +477,18 @@ section{
 
 .arrivals .arrivals-slider .box .content h3{
     font-size: 2rem;
-    color:var(--black);
+    color:whitesmoke;
 }
 
 .arrivals .arrivals-slider .box .content .price{
     font-size: 2.2rem;
-    color:var(--black);
+    color:whitesmoke;
     padding-bottom: .5rem;
 }
 
 .arrivals .arrivals-slider .box .content .price span{
     font-size: 1.5rem;
-    color:var(--light-color);
+    color:red;
     text-decoration: line-through;
 }
 
@@ -492,7 +498,7 @@ section{
 }
 
 .deal{
-    background:#f3f3f3;
+    background:whitesmoke;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -512,19 +518,19 @@ section{
 }
 
 .deal .content h3{
-    color:var(--orange);
+    color:rgb(53, 42, 42);
     font-size: 2.5rem;
     padding-bottom: .5rem;
 }
 
 .deal .content h1{
-    color:var(--black);
+    color:black;
     font-size: 4rem;
 }
 
 .deal .content p{
     padding:1rem 0;
-    color:var(--light-color);
+    color:rgb(78, 72, 56);
     font-size: 1.4rem;
     line-height: 2;
 }
@@ -610,6 +616,10 @@ section{
     line-height: 2;
 }
 
+.footer{
+    background-color: black;
+}
+
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -645,6 +655,7 @@ section{
 .footer .share{
     padding:1rem 0;
     text-align: center;
+    
 }
 
 .footer .share a{
@@ -652,8 +663,8 @@ section{
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
-    color:#fff;
-    background:var(--orange);
+    color:rgb(8, 8, 8);
+    background:whitesmoke;
     margin:0 .3rem;
     border-radius: 50%; 
 }
@@ -668,12 +679,12 @@ section{
     padding:0 1rem;
     padding-top: 2.5rem;
     font-size: 2rem;
-    color:var(--light-color);
+    color:red;
     text-align: center;
 }
 
 .footer .credit span{
-    color:var(--orange);
+    color:whitesmoke;
 }
 
 .loader-container{
