@@ -285,7 +285,7 @@ section{
 }
 
 .home{
-    background: url(../book\ image/backgnd.jpg) no-repeat;
+    background-image: url(bookimage/backgnd.jpg);
     background-size: cover;
     background-position: center;
 }
